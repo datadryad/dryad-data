@@ -8,6 +8,11 @@ Data NCBI LinkOut connections to Dryad
 
 ### Other information:
 
+* According to NCBI's notification to LinkOut providers, _"[due] to a
+  technical problem, we lost some of the hits count from 2014-03-14 to
+  2014-03-28.  Thus, your statistics for March 2014 will be lower than
+  normal.  We apologize to any inconvenience."_
+
 * The commit messages for the 2013 reports (i.e., all prior to
   `7893-2014-01-10.csv`) are off by one month. For example, commit
   be20bdb6e3e7520a7cf37dbeb6cc9c695bd4c443 states to be a report for
