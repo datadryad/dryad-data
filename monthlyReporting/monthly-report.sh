@@ -4,7 +4,7 @@ set -e
 FILTER_COMMAND=filterShoppingCart.pl
 PREVIOUS_ID_FILE=shoppingCartIdsSeenInReports.txt
 
-echo Starting monthly report...
+echo Starting monthly report. NOTE: This command must be run from the directory that contains the script. Make sure this directory has been updated from the master branch. Output will go to /tmp
 
 echo Export archived
 psql -U dryad_app -d dryad_repo -c "\copy (select * from shoppingcart, item, metadatavalue where shoppingcart.status='completed' and shoppingcart.item=metadatavalue.item_id and shoppingcart.item=item.item_id and item.in_archive=TRUE and metadatavalue.metadata_field_id=11) to '/tmp/shoppingArchived.csv' with CSV;"
