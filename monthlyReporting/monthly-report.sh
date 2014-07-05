@@ -7,10 +7,10 @@ PREVIOUS_ID_FILE=shoppingCartIdsSeenInReports.txt
 echo Starting monthly report...
 
 echo Export archived
-psql -U dryad_app -d dryad_repo -c "\copy (select * from shoppingcart, item, metadatavalue where shoppingcart.item=metadatavalue.item_id and shoppingcart.item=item.item_id and item.in_archive=TRUE and metadatavalue.metadata_field_id=11) to '/tmp/shoppingArchived.csv' with CSV;"
+psql -U dryad_app -d dryad_repo -c "\copy (select * from shoppingcart, item, metadatavalue where shoppingcart.status='completed' and shoppingcart.item=metadatavalue.item_id and shoppingcart.item=item.item_id and item.in_archive=TRUE and metadatavalue.metadata_field_id=11) to '/tmp/shoppingArchived.csv' with CSV;"
 
 echo Export blackout
-psql -U dryad_app -d dryad_repo -c "\copy (select * from shoppingcart, item where shoppingcart.item=item.item_id and item.item_id in (select item_id from metadatavalue where text_value like '%Entered publication blackout%' and item_id not in (select item_id  from metadatavalue where text_value like '%Approved for entry into archive%')))  to '/tmp/shoppingBlackout.csv' with CSV;"
+psql -U dryad_app -d dryad_repo -c "\copy (select * from shoppingcart, item where shoppingcart.status='completed' and shoppingcart.item=item.item_id and item.item_id in (select item_id from metadatavalue where text_value like '%Entered publication blackout%' and item_id not in (select item_id  from metadatavalue where text_value like '%Approved for entry into archive%')))  to '/tmp/shoppingBlackout.csv' with CSV;"
 
 echo Export fake blackout
 psql -U dryad_app -d dryad_repo -c "\copy (select * from shoppingcart, item where shoppingcart.item=item.item_id and item.item_id in (select item_id from workflowitem where workflow_id in (select workflow_item_id from taskowner where owner_id = 949))) to '/tmp/shoppingFakeBlackout.csv' with CSV;"
