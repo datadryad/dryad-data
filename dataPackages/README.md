@@ -9,4 +9,4 @@ dryadSubmitDates.txt = List of the date each data package was
 deposited to Dryad.
 
 dataPackagesInDryad.xlsx = Excel version of the data in the other
-files, including graphs.
+files, including graphs. This file is NOT kept up to date.
