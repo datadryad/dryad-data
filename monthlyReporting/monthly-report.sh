@@ -32,4 +32,4 @@ $FILTER_COMMAND $PREVIOUS_ID_FILE /tmp/shoppingCharged.csv >/tmp/shoppingCharged
 #git commit -m "Monthly update of previously-reported IDs"
 
 echo 
-echo "TO FINISH REPORT (still needs to be automated) see http://wiki.datadryad.org/Monthly_Reports. Next step is #3."
+echo "TO FINISH REPORT (still needs to be automated) see http://wiki.datadryad.org/Monthly_Reports."
