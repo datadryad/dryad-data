@@ -1,0 +1,52 @@
+Count	File Format
+  6165, Zip archive
+ 14770, Plain Text
+  7845, Microsoft Excel OpenXML
+  6790, Comma-separated values (CSV)
+  5635, Unknown data format
+  2990, Microsoft Excel 97-2007
+  2592, FASTA sequence file
+  2286, Adobe Portable Document Format (PDF)
+  2031, Nexus
+  1684, GZip archive
+  1422, Microsoft Word OpenXML
+  1080, R script
+   816, Newick tree file
+   635, Microsoft Word 97-2007
+   629, Tag Image File Format (TIFF)
+   582, Rich Text Format (RTF)
+   412, Extensible Markup Language (XML)
+   347, Tape Archive File (TAR)
+   346, Roshal ARchive (RAR)
+   317, JPEG Image
+   306, Phylogeny Inference Package (Phylip)
+   246, Binary Sequence Alignment Map (BAM) 
+   206, Bzip2 archive
+   128, Python program
+   117, UNIX Tar File Gzipped (TGZ)
+   115, Perl program
+   110, Wave Audio Format
+    76, Audio Video Interleave (AVI)
+    75, Mathematica Notebook
+    66, Hypertext Markup Language (HTML)
+    65, MPEG-4 video
+    58, 7z compressed file
+    50, Text file storing gene sequence variations (VCF)
+    36, Quicktime Video
+    35, Moving Picture Experts Group (MPEG)
+    34, Portable Network Graphics (PNG)
+    32, Microsoft Excel Binary XML
+    30, Microsoft PowerPoint OpenXML
+    26, Postscript
+    25, MP3 audio
+    24, Open Document Format Spreadsheet
+    23, FASTA QUAL File
+    18, Keyhole Markup Language (KML)
+    18, NetCDF (network Common Data Form)
+     8, Web Ontology Language (OWL)
+     7, Graphics Interchange Format (GIF)
+     7, Open Document Format Text File
+     4, Microsoft Powerpoint 97-2007
+     2, Item-specific license agreed upon to submission
+     1, Bioinformatics data file (geneious)
+     1, Tex/LateX document
