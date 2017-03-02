@@ -5,6 +5,7 @@ Data from and about Dryad content and users' interaction with it, including
 statistics, reports, access stats, etc.
 
 - `annualStatistics`: Summary statistics of Dryad usage produced each year.
+- `dataFiles`: Shows the distribution of bitstream formats across all items in the Data Files collection.
 - `dataPackages`: Summary statistics about the data packages in Dryad. 
 - `monthlyReporting`: Tools used to create monthly reports for Dryad.
 - `NCBIlinkout`: Access statistics and other data about [NCBI LinkOut
