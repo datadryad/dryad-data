@@ -1,7 +1,10 @@
 Annual Statistics
 =================
 
-This folder contains the statistics that are generated annually to support the Dryad Annual Report. 
+This folder contains the statistics that are generated annually to
+support the Dryad Annual Report. Note that the files are cumulative;
+each file contains information on all data packages that were in the
+repository at the end of the respective year.
 
 About the download counts: 
 - Dryad tracks downloads of individual files, but for the purpose of
