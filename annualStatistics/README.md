@@ -16,3 +16,5 @@ About the download counts:
   files are combined into a larger compressed files. 
 - Download counts in this report are cumulative, representing all
   downloads since a package was first published.
+- Package size is in bytes. It includes the sum of sizes for all data 
+  files in the package, excluding the size of any metadata.
